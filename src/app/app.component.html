@@ -1,3 +1,5 @@
-<div class="container">
-  <p> the server {{ serverName }} is the number {{ serverNumber }} is now {{ serverStatus }} </p>
-</div>
+<label for="name">full name </label>
+<input type="text" name="name" placeholder="enter your name" [(ngModel)]="name">
+<p> {{ name }}</p>
+
+<button (click)="resetName()" [disabled]= "checkName()"> Reset name </button>

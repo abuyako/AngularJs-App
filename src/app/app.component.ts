@@ -6,7 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  serverName = 'abuyako';
-  serverNumber = 10;
-  serverStatus = 'offline';
+  name = '';
+  status = true;
+
+  resetName () {
+    this.name = '';
+  }
+
+  checkName() {
+    if( this.name === ''){
+      this.status = true;
+      return this.status;
+    }
+  }
 }
