@@ -1,4 +1,4 @@
-<h1>this is the ngIf examples </h1>
+<h1 [ngStyle]="{color: getColor()}">this is the ngIf examples </h1>
 
 <p *ngIf="flag; else elseblock" > Flag is true </p>
 <ng-template #elseblock>
