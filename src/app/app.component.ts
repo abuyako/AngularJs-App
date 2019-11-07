@@ -7,19 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
  
-  flag = true;
+ studentRoster = ['abuyako', 'abisai', 'abiba'];  
+ currentName='';
 
-  toggleFlag(){
-    this.flag = !this.flag;
-    return this.flag;
-  }
+ add(){
+  this.studentRoster.push(this.currentName);
+ }
 
-  getColor(){
-
-    if(this.flag === true){
-      return 'green';
-    }else {
-      return 'red';
-    }
-  }
 }
